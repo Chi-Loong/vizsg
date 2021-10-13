@@ -51,8 +51,8 @@ export default {
 
 <style>
 .waveBackground {
-  background-image: url("/img/waves.jpg");
-  background-repeat: repeat;
+  /* background-image: url("/img/waves.jpg");
+  background-repeat: repeat; */
 }
 .menuIcon {
   position: fixed;
