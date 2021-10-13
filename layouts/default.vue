@@ -40,12 +40,32 @@ export default {
       drawer: false,
       items: [
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-chart-pie',
           title: 'Visualizations',
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-domain',
+          title: 'Organizations',
+          to: '/underconstruction'
+        },
+        {
+          icon: 'mdi-calendar',
+          title: 'Events and Meetups',
+          to: '/underconstruction'
+        },
+        {
+          icon: 'mdi-school',
+          title: 'Training / Education',
+          to: '/underconstruction'
+        },
+        {
+          icon: 'mdi-account',
+          title: 'People',
+          to: '/underconstruction'
+        },
+        {
+          icon: 'mdi-help-circle',
           title: 'About',
           to: '/about'
         }

@@ -29,8 +29,8 @@ export default {
       { hid: 'og:image:alt', property: 'og:image:alt', content: 'Nuxt Mission'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Comfortaa:400,700'}
+      { rel: 'icon', type: 'image/x-icon', href: '/vizsg_favicon.png' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300'}
     ]
   },
 

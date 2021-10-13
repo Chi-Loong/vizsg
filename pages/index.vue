@@ -24,15 +24,10 @@
         <v-flex xl2 lg2 md2 sm1 xs1></v-flex>
         <v-flex xl8 lg8 md8 sm10 xs10>
           <div id="searchVizBar">
-            <v-autocomplete v-model="searchedViz" :items="getVizTitles" dense chips multiple label="Search Visualization Title" @change="searchCards">
-              <template v-slot:selection="data">
-                <v-chip v-bind="data.attrs" :input-value="data.selected" close @click:close="removeFromSearchList(data.item)">
-                  {{ data.item }}
-                </v-chip>
-              </template>
+            <v-autocomplete v-model="searchedViz" :items="getVizTitles" dense small-chips deletable-chips multiple label="Search Visualization Title" @change="searchCards">
             </v-autocomplete>
           </div>
-          <h1 id="titleText" class="pa-6 text-center">{{ title }}</h1>
+          <h1 id="titleText" class="py-4 text-center">{{ title }}</h1>
         </v-flex>
         <v-flex xl2 lg2 md2 sm1 xs1></v-flex>
       </v-layout>
@@ -92,7 +87,10 @@ export default {
     title: "All visualizations"
   }),
   computed: {
-    ...mapState(["categories", "visualizations"]),
+    ...mapState({
+        categories: state => state.viz.categories,
+        visualizations: state => state.viz.visualizations
+    }),
     getVizTitles: function() {
       this.searchList = this.visualizations.map(ele => ele.name);
       this.searchList.sort();
@@ -189,12 +187,6 @@ export default {
 
       this.title = "Custom Search";
     },
-    removeFromSearchList: function(item) {
-      let index = this.searchedViz.indexOf(item);
-      this.searchedViz.splice(index, 1);
-
-      this.searchCards();      
-    },
     //Animation transition hooks bound to watched data
     //animation onComplete hooks need to be wrapped in functions and durations specified for GSAP to work properly
     cardEnter: function(ele, done) {
@@ -251,8 +243,8 @@ export default {
 
 <style>
 h1, h2 {
-    font-family: "Comfortaa", Arial, sans-serif;
-    text-transform: uppercase;
+    font-family: 'Lato', Arial, sans-serif;
+    text-transform: capitalize;
 }
 
 .manual-v-layout {

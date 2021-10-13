@@ -102,7 +102,6 @@ export const state = () => ({
             image: "/img/taxirouter.jpg",
             description: "Observe live available taxi locations.",
             link: "https://taxirouter.sg/",
-            blog: "http://cheeaun.com/blog/2016/03/building-taxirouter-sg/",
             lastupdate: "01/01/2021",
             live: true
         },
