@@ -23,14 +23,16 @@
       <v-layout row>
         <v-flex xl2 lg2 md2 sm1 xs1></v-flex>
         <v-flex xl8 lg8 md8 sm10 xs10>
-          <v-autocomplete v-model="searchedViz" :items="getVizTitles" dense chips multiple label="Search Visualization Title" @change="searchCards">
-            <template v-slot:selection="data">
-              <v-chip v-bind="data.attrs" :input-value="data.selected" close @click:close="removeFromSearchList(data.item)">
-                {{ data.item }}
-              </v-chip>
-            </template>
-          </v-autocomplete>
-          <h1 class="pa-6 text-center">{{ title }}</h1>
+          <div id="searchVizBar">
+            <v-autocomplete v-model="searchedViz" :items="getVizTitles" dense chips multiple label="Search Visualization Title" @change="searchCards">
+              <template v-slot:selection="data">
+                <v-chip v-bind="data.attrs" :input-value="data.selected" close @click:close="removeFromSearchList(data.item)">
+                  {{ data.item }}
+                </v-chip>
+              </template>
+            </v-autocomplete>
+          </div>
+          <h1 id="titleText" class="pa-6 text-center">{{ title }}</h1>
         </v-flex>
         <v-flex xl2 lg2 md2 sm1 xs1></v-flex>
       </v-layout>
@@ -114,6 +116,9 @@ export default {
           gsap.from("#nav-id" + i, 2, {x:Math.cos(radians) * -150, y:Math.sin(radians) * -150, autoAlpha:0, ease: Back.easeOut.config(1.7)},1);
       }
       this.animateIconToCentre(0, 2);
+
+      gsap.from("#searchVizBar", {autoAlpha: 0, duration: 2, delay: 1});
+      gsap.from("#titleText", {autoAlpha: 0, duration: 2, delay: 1});
     },
     sortCardsByTime: function(a, b) {
       let dateA = DateTime.fromFormat(a.lastupdate, "dd/MM/yyyy");

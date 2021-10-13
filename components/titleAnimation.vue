@@ -32,7 +32,7 @@
                 <circle transform="translate(160.5 432.3) rotate(-81.4)" r="8.6" cy="122.9" cx="331.4"/>
                 <circle transform="translate(217.6 460.3) rotate(-81.4)" r="8.6" cy="103.7" cx="376.2"/>
                 <ellipse transform="translate(144.1 525.5) rotate(-81.4)" ry="59.8" rx="64.1" cy="179" cx="377.4" fill="none" stroke-width="5px"/>
-                <path id="sgflyerstar" d="M381.9,144.8L376.7 162.2 369.7 164.2 356.9 151 365.3 166.6 361.5 173.3 343.8 173.1 360 177.9 361.7 186.1 350 198.1 364.4 190.7 371.6 195.2 372.1 211.2 376.6 196.1 385.6 194 397.1 205 389.5 190.6 393.4 183 410.2 182.9 394 178.1 391.5 170.2 404 157.9 388 166.5 381.6 162.9 381.9 144.8z"/>
+                <path d="M381.9,144.8L376.7 162.2 369.7 164.2 356.9 151 365.3 166.6 361.5 173.3 343.8 173.1 360 177.9 361.7 186.1 350 198.1 364.4 190.7 371.6 195.2 372.1 211.2 376.6 196.1 385.6 194 397.1 205 389.5 190.6 393.4 183 410.2 182.9 394 178.1 391.5 170.2 404 157.9 388 166.5 381.6 162.9 381.9 144.8z"/>
             </g>
         </g>
         <g id="tree0" stroke="#999" stroke-width="2px">
@@ -84,16 +84,15 @@ export default {
         animateIntro() {
             let t1 = new TimelineMax();
 
-            t1.from("#MBS", 3, {skewX:90, transformOrigin: "50% 100%", ease: Elastic.easeOut.config(1, 0.3)}, 0.5);
-            t1.from("#changiairport", 2, {scale:0, x:50, transformOrigin: "50% 100%", ease: Elastic.easeOut.config(1, 0.6)}, 1);
-            t1.from("#merlion", 2, {scale:0, x:-50, transformOrigin: "50% 100%", ease: Elastic.easeOut.config(1, 0.6)}, 1.5);
+            t1.from("#MBS", 3, {skewX:90, autoAlpha:0, transformOrigin: "50% 100%", ease: Elastic.easeOut.config(1, 0.3)}, 0.5);
+            t1.from("#changiairport", 2, {scale:0, autoAlpha:0, x:50, transformOrigin: "50% 100%", ease: Elastic.easeOut.config(1, 0.6)}, 1);
+            t1.from("#merlion", 2, {scale:0, autoAlpha:0, x:-50, transformOrigin: "50% 100%", ease: Elastic.easeOut.config(1, 0.6)}, 1.5);
             t1.staggerFrom(["#merlionspit1", "#merlionspit2"], 3, {autoAlpha:0, y:-20}, 0.5, 2);
 
-            t1.from("#sgflyer", 3, {skewX:-90, transformOrigin: "50% 100%", ease: Elastic.easeOut.config(1, 0.3)}, 2);
+            t1.from("#sgflyer", 3, {skewX:-90, autoAlpha:0, transformOrigin: "50% 100%", ease: Elastic.easeOut.config(1, 0.3)}, 2);
             t1.staggerFrom("#sgflyer circle", 2, {autoAlpha:0}, 0.2, 2.5);
-            t1.from("#sgflyerstar", 3, {autoAlpha:0, rotation:-360, transformOrigin:"50% 50%"}, 2.5);
 
-            t1.staggerFrom(["#tree0", "#tree1", "#tree2"], 1.5, {scale:0, transformOrigin: "50% 100%", ease: Elastic.easeOut.config(1, 0.7)}, 0.25, 2.5);
+            t1.staggerFrom(["#tree0", "#tree1", "#tree2"], 1.5, {scale:0, autoAlpha:0, transformOrigin: "50% 100%", ease: Elastic.easeOut.config(1, 0.7)}, 0.25, 2.5);
             t1.staggerFrom("#tree0 line", 2, {autoAlpha:0}, 0.25, 2.75);
             t1.staggerFrom("#tree1 line", 2, {autoAlpha:0}, 0.25, 3);
             t1.staggerFrom("#tree2 line", 2, {autoAlpha:0}, 0.25, 3.25);
