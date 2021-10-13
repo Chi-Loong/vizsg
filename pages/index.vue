@@ -39,7 +39,7 @@
     <v-flex d-flex>
       <v-layout row wrap>
         <transition-group name="vizlist" v-on:enter="cardEnter" v-on:leave="cardLeave" tag="v-flex" class="manual-v-layout">
-        <v-flex xl2 lg3 md4 sm6 v-for="(ele, index) in viz" :key="ele.name">
+        <v-flex xl2 lg3 md4 sm6 xs12 v-for="(ele, index) in viz" :key="ele.name">
           <v-hover v-slot="{ hover }">
           <v-card height="100%" elevation="2" outlined @click="cardClicked(index)">
             <v-img :src="ele.image" height="160px">
