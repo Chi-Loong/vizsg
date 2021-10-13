@@ -1,6 +1,10 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer v-model="drawer" fixed app>
+  <v-sheet
+    class="overflow-hidden"
+    style="position: relative;"
+  >    
+    <v-navigation-drawer v-model="drawer" fixed left app>
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -18,7 +22,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-main class="waveBackground">
+    <v-main>
       <v-container>
         <div class="menuIcon">
           <v-icon large color="white" @click.stop="drawer = !drawer">mdi-menu</v-icon>
@@ -26,6 +30,7 @@
         <Nuxt />
       </v-container>
     </v-main>
+  </v-sheet>
   </v-app>
 </template>
 
@@ -50,14 +55,10 @@ export default {
 </script>
 
 <style>
-.waveBackground {
-  /* background-image: url("/img/waves.jpg");
-  background-repeat: repeat; */
-}
 .menuIcon {
   position: fixed;
   top: 2%;
   right: 2%;
-  z-index: 500;
+  z-index: 100;
 }
 </style>

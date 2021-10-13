@@ -236,6 +236,7 @@ export default {
         // Code that will run only after the entire view has been rendered
         this.pickerAnimate();
       })
+
   },
   beforeDestroy: function() {
       window.removeEventListener("resize", this.getProjectPickerSize);
@@ -265,6 +266,7 @@ h1, h2 {
   padding-bottom: 8px !important;
   padding-top: 8px !important;
   cursor: pointer;
+  width: 100%;
 }
 .v-card-reveal {
   align-items: center;
