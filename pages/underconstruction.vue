@@ -3,7 +3,7 @@
     <v-layout justify-center>
     <v-card class="light-blue darken-3">
         <h1 class="text-center">Under construction!</h1>
-        <img src="underconstruction.png"/>
+        <img src="underconstruction.svg" style="width:100%"/>
     </v-card>
     </v-layout>
   </v-container>

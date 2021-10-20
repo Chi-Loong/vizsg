@@ -38,7 +38,7 @@
         <transition-group name="vizlist" v-on:enter="cardEnter" v-on:leave="cardLeave" tag="v-flex" class="manual-v-layout">
         <v-flex xl2 lg3 md4 sm6 xs12 v-for="(ele, index) in viz" :key="ele.name">
           <v-hover v-slot="{ hover }">
-          <v-card height="100%" elevation="2" outlined @click="cardClicked(index)">
+          <v-card height="100%" elevation="2" outlined @click="cardClicked(ele)">
             <v-img :src="ele.image" height="160px">
             <v-expand-transition>
               <div v-if="hover" class="d-flex blue darken-3 v-card-reveal" style="height: 100%;">
@@ -206,8 +206,8 @@ export default {
         onComplete: function(){ done() },
          duration: 1});
     },
-    cardClicked: function(index) {
-      window.location.href = this.viz[index].link;
+    cardClicked: function(ele) {
+      window.location.href = ele.link;
     },
     getProjectPickerSize: function() {
       if (this.$refs.projectPicker != undefined) {
@@ -285,11 +285,6 @@ h1, h2 {
   padding: 3px;
   cursor: pointer;
   background: #1565c0;
-}
-.findButton {
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
 }
 .vizlist-move {
   transition: transform 2s;

@@ -25,7 +25,12 @@
                 <div class="body-1">
                     <p>Welcome to this open list on the data visualization scene in Singapore!</p>
                     <p>This is your friendly local guide to all people, things and places to do with visualization, data-related design and art, and data journalism.</p>
-                    <p>If you have any questions or you wish to contribute to this website, do contact the moderators XXX, YYY, ZZZ.</p>
+                    <p>If you have any questions or you wish to contribute to this website, do contact any one of the following moderators:
+                        <ul>
+                            <li>Chi-Loong (chiloong@vslashr.com)</li>
+                            <li>XXX</li>
+                        </ul>
+                    </p>
                 </div>
                 </v-card-text>
             </v-card>
@@ -37,7 +42,7 @@
                 <div class="body-1">
                     <p>Viz.sg started in 2015 as a small showcase of visualizations.</p>
                     <p>Then it grew into a list of visualizations by the community.</p>
-                    <p>This is the 3rd version of the site, and the is open sourced and community moderated at XXX.</p>
+                    <p>This is the 3rd version of the site, and it is open sourced and community moderated on <a href="https://github.com/Chi-Loong/vizsg">GitHub</a>.</p>
                     <p>We hope that you can find useful visualizations, tools and links about the data visualization scene on Singapore here!</p>
                 </div>
                 </v-card-text>

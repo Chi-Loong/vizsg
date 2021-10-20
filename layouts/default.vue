@@ -6,13 +6,7 @@
   >    
     <v-navigation-drawer v-model="drawer" fixed left app>
       <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
+        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -47,17 +41,12 @@ export default {
         {
           icon: 'mdi-domain',
           title: 'Organizations',
-          to: '/underconstruction'
+          to: '/org'
         },
         {
           icon: 'mdi-calendar',
-          title: 'Events and Meetups',
-          to: '/underconstruction'
-        },
-        {
-          icon: 'mdi-school',
-          title: 'Training / Education',
-          to: '/underconstruction'
+          title: 'Learning',
+          to: '/learning'
         },
         {
           icon: 'mdi-account',
