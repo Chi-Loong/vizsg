@@ -59,10 +59,9 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
 h1, h2 {
     font-family: "Lato", Arial, sans-serif;
-    text-transform: uppercase;
 }
 .splash {
     max-width: 800px;

@@ -15,9 +15,8 @@ export default {
 </script>
 
 <style>
-h2 {
+h1 {
     font-family: "Lato", Arial, sans-serif;
-    text-transform: uppercase;
 }
 .splash {
     max-width: 800px;

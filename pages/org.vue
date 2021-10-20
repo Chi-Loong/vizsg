@@ -86,9 +86,8 @@ export default {
 </script>
 
 <style>
-h1, h2 {
+h1 {
     font-family: 'Lato', Arial, sans-serif;
-    text-transform: capitalize;
 }
 
 .v-card-reveal {
