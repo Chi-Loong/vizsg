@@ -22,7 +22,7 @@ export const state = () => ({
             school: "Singapore University of Technology and Design",
             instructor: "Ate Poorthius",
             year: 2020,
-            link: "https://www.vslashr.com/"
+            link: "https://idv-2020.teaching.atepoorthuis.com/"
         },
         {
             name: "Interactive Data Visualization (HASS 526)",

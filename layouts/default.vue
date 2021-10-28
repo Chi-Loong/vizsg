@@ -48,11 +48,11 @@ export default {
           title: 'Learning',
           to: '/learning'
         },
-        {
-          icon: 'mdi-account',
-          title: 'People',
-          to: '/underconstruction'
-        },
+        // {
+        //   icon: 'mdi-account',
+        //   title: 'People',
+        //   to: '/underconstruction'
+        // },
         {
           icon: 'mdi-help-circle',
           title: 'About',

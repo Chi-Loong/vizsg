@@ -48,9 +48,9 @@ export const state = () => ({
             category: "health and environment",
             image: "/vizimg/dengue.jpg",
             description: "Live visualization on dengue and zika cases around the island.",
-            link: "https://dengue.viz.sg/app/dengue/",
+            link: "https://dengue.viz.sg/",
             blog: "http://www.vslashr.com/2013/06/singapore-dengue-clustering-heatmap/",
-            lastupdate: "15/09/2020",
+            lastupdate: "28/10/2021",
             live: true
         },
         {
