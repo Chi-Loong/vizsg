@@ -33,7 +33,7 @@
       </v-layout>
     </v-flex>
 
-    <v-flex d-flex>
+    <v-flex d-flex id="vizPanel">
       <v-layout row wrap>
         <transition-group name="vizlist" v-on:enter="cardEnter" v-on:leave="cardLeave" tag="v-flex" class="manual-v-layout">
         <v-flex xl2 lg3 md4 sm6 xs12 v-for="(ele, index) in viz" :key="ele.name">
@@ -117,6 +117,7 @@ export default {
 
       gsap.from("#searchVizBar", {autoAlpha: 0, duration: 2, delay: 1});
       gsap.from("#titleText", {autoAlpha: 0, duration: 2, delay: 1});
+      gsap.from("#vizPanel", {autoAlpha: 0, duration: 2, delay: 1});
     },
     sortCardsByTime: function(a, b) {
       let dateA = DateTime.fromFormat(a.lastupdate, "dd/MM/yyyy");
