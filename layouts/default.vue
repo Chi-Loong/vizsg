@@ -1,5 +1,6 @@
 <template>
   <v-app dark>
+  <loadSpinner v-if="showSpinner" />
   <v-sheet
     class="overflow-hidden"
     style="position: relative;"
@@ -31,6 +32,7 @@
 <script>
 export default {
   data: () => ({
+      showSpinner: true,
       drawer: false,
       items: [
         {
@@ -59,7 +61,13 @@ export default {
           to: '/about'
         }
       ],
-  })
+  }),
+  beforeCreate() {
+    this.showSpinner = true;
+  },
+  mounted() {
+    this.showSpinner = false;
+  }
 }
 </script>
 

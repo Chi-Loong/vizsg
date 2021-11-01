@@ -3,6 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
+  ssr: false,
   head: {
     titleTemplate: 'Viz.SG',
     title: 'Viz.SG',
@@ -19,7 +20,7 @@ export default {
       { hid: 'twitter:description', name: 'twitter:description', content: 'Visualizing Singapore, one dataset at a time. A resource on all things vsiaulization in Singapore.'},
       { hid: 'twitter:image', name: 'twitter:image', content:'vizsg.jpg'},
       // Open Graph
-      { hid: 'og:site_name', property: 'og:site_name', content: 'JamStack Explorers - Nuxt'},
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Visualizing Singapore'},
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:url', property: 'og:url', content: 'https://viz.sg'},
       { hid: 'og:title', property: 'og:title', content: 'Visualizing Singapore'},
