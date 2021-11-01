@@ -10,21 +10,21 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Visualizing Singapore, one dataset at a time. A resource on all things vsiaulization in Singapore.' },
+      { hid: 'description', name: 'description', content: 'Visualizing Singapore, one dataset at a time. A resource on all things visualization in Singapore.' },
       { name: 'format-detection', content: 'telephone=no' },
       // Twitter
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image'},
       { hid: 'twitter:site', name: 'twitter:site', content: '@chiloong'},
       { hid: 'twitter:url', name: 'twitter:url', content: 'https://viz.sg'},
       { hid: 'twitter:title', name: 'twitter:title', content: 'Visualizing Singapore'},
-      { hid: 'twitter:description', name: 'twitter:description', content: 'Visualizing Singapore, one dataset at a time. A resource on all things vsiaulization in Singapore.'},
+      { hid: 'twitter:description', name: 'twitter:description', content: 'Visualizing Singapore, one dataset at a time. A resource on all things visualization in Singapore.'},
       { hid: 'twitter:image', name: 'twitter:image', content:'vizsg.jpg'},
       // Open Graph
       { hid: 'og:site_name', property: 'og:site_name', content: 'Visualizing Singapore'},
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:url', property: 'og:url', content: 'https://viz.sg'},
       { hid: 'og:title', property: 'og:title', content: 'Visualizing Singapore'},
-      { hid: 'og:description', property: 'og:description', content: 'Visualizing Singapore, one dataset at a time. A resource on all things vsiaulization in Singapore.'},
+      { hid: 'og:description', property: 'og:description', content: 'Visualizing Singapore, one dataset at a time. A resource on all things visualization in Singapore.'},
       { hid: 'og:image', property: 'og:image', content: 'vizsg.jpg'},
       { hid: 'og:image:secure_url', property: 'og:image:secure_url', content: 'vizsg.jpg'},
       { hid: 'og:image:alt', property: 'og:image:alt', content: 'Viz.SG'}
@@ -50,6 +50,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/google-analytics'    
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -68,6 +69,11 @@ export default {
     manifest: {
       lang: 'en'
     }
+  },
+
+  // Google analytics
+  googleAnalytics: {
+    id: 'UA-38155188-1'
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

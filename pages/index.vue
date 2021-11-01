@@ -113,7 +113,7 @@ export default {
             var radians2 = (360 / this.picker.length) * (i + 2) * Math.PI / 180 - 90;
           gsap.from("#nav-id" + i, 2, {x:Math.cos(radians) * -150, y:Math.sin(radians) * -150, autoAlpha:0, ease: Back.easeOut.config(1.7)},1);
       }
-      this.animateIconToCentre(0, 2);
+      this.animateIconToCentre(0, 0);
 
       gsap.from("#searchVizBar", {autoAlpha: 0, duration: 2, delay: 1});
       gsap.from("#titleText", {autoAlpha: 0, duration: 2, delay: 1});
@@ -215,8 +215,6 @@ export default {
         this.projectPickerWidth = this.$refs.projectPicker.clientWidth;
         this.projectPickerHeight = this.$refs.projectPicker.clientHeight;
       }
-
-      this.animateIconToCentre(this.prevIndex);
     }
   },  
   mounted: function() {

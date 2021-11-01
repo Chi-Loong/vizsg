@@ -1,7 +1,6 @@
 <template>
-  <div>
-  <loadSpinner v-if="showSpinner" />
   <v-app dark>
+  <loadSpinner v-if="showSpinner" />
   <v-sheet
     class="overflow-hidden"
     style="position: relative;"
@@ -28,7 +27,6 @@
     </v-main>
   </v-sheet>
   </v-app>
-  </div>
 </template>
 
 <script>
