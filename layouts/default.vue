@@ -67,6 +67,11 @@ export default {
   },
   mounted() {
     this.showSpinner = false;
+
+    // pop-out drawer if window width more than 1250px
+    setTimeout(() => { 
+       if (this.$vuetify.breakpoint.width >= 1250) { this.drawer = true; }
+    }, 500);
   }
 }
 </script>

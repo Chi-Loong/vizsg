@@ -216,10 +216,6 @@ export default {
         this.projectPickerHeight = this.$refs.projectPicker.clientHeight;
       }
 
-      console.log("width: " + this.projectPickerWidth);
-      console.log("height: " + this.projectPickerHeight);
-      console.log(this.$refs);
-
       // animate wheel nicely
       for (let i =0; i <= this.categories.length; i++) {
        if (i == this.prevIndex) {
