@@ -117,7 +117,6 @@ export default {
 
       gsap.from("#searchVizBar", {autoAlpha: 0, duration: 2, delay: 1});
       gsap.from("#titleText", {autoAlpha: 0, duration: 2, delay: 1});
-      gsap.from("#vizPanel", {autoAlpha: 0, duration: 2, delay: 1});
     },
     sortCardsByTime: function(a, b) {
       let dateA = DateTime.fromFormat(a.lastupdate, "dd/MM/yyyy");
@@ -170,6 +169,7 @@ export default {
       this.animateIconToWheel(this.prevIndex);
       this.animateIconToCentre(index);
       this.prevIndex = index;
+
       this.title = ele.name;
     },
     searchCards: function() {
@@ -215,6 +215,20 @@ export default {
         this.projectPickerWidth = this.$refs.projectPicker.clientWidth;
         this.projectPickerHeight = this.$refs.projectPicker.clientHeight;
       }
+
+      console.log("width: " + this.projectPickerWidth);
+      console.log("height: " + this.projectPickerHeight);
+      console.log(this.$refs);
+
+      // animate wheel nicely
+      for (let i =0; i <= this.categories.length; i++) {
+       if (i == this.prevIndex) {
+         this.animateIconToCentre(this.prevIndex);          
+       } else {
+          this.animateIconToWheel(i);
+       }
+      }
+
     }
   },  
   mounted: function() {
@@ -240,7 +254,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 h1, h2 {
     font-family: 'Lato', Arial, sans-serif;
     text-transform: capitalize;

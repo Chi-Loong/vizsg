@@ -54,7 +54,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 h1, h2 {
     font-family: "Lato", Arial, sans-serif;
 }

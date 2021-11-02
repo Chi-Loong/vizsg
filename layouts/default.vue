@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-  <loadSpinner v-if="showSpinner" />
+  <!-- <loadSpinner v-if="showSpinner" /> -->
   <v-sheet
     class="overflow-hidden"
     style="position: relative;"
@@ -71,7 +71,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .menuIcon {
   position: fixed;
   top: 2%;
