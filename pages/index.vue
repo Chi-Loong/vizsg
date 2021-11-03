@@ -24,7 +24,7 @@
         <v-flex xl2 lg2 md2 sm1 xs1></v-flex>
         <v-flex xl8 lg8 md8 sm10 xs10>
           <div id="searchVizBar">
-            <v-autocomplete v-model="searchedViz" :items="getVizTitles" dense small-chips deletable-chips multiple label="Search Visualization Title" @change="searchCards">
+            <v-autocomplete v-model="searchedViz" :items="getVizTitles" dense small-chips deletable-chips multiple label="Search for visualization" @change="searchCards">
             </v-autocomplete>
           </div>
           <h1 id="titleText" class="py-4 text-center">{{ title }}</h1>

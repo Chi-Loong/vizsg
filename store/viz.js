@@ -146,6 +146,15 @@ export const state = () => ({
             description: "View past and present dengue clusters on an interactive map.",
             link: "http://outbreak.sgcharts.com/",
             lastupdate: "06/11/2020"
+        },
+        {
+            name: "HDB resale prices",
+            category: "housing and infrastructure",
+            image: "/vizimg/hdb-resale-prices.jpg",
+            description: "HDB resale prices by year, town and type.",
+            link: "https://hdb-resale-prices.sg/",
+            lastupdate: "03/11/2021",
+            live: true
         }    
     ]
 })
