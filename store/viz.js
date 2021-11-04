@@ -5,7 +5,8 @@ export const state = () => ({
         { name: "health and environment", icon: "mdi-hospital-box" },
         { name: "housing and infrastructure", icon: "mdi-home-city" },
         { name: "education", icon: "mdi-school" },
-        { name: "transport", icon: "mdi-car" }
+        { name: "transport", icon: "mdi-car" },
+        { name: "sports", icon: "mdi-basketball" },
     ],
     visualizations: [
         {
@@ -133,7 +134,7 @@ export const state = () => ({
         },
         {
             name: "Track and Field SG",
-            category: "education",
+            category: "sports",
             image: "/vizimg/viztf.png",
             description: "You're not slow (fast) - You're just born in the wrong (right) year. ",
             link: "https://public.tableau.com/profile/hx.chua#!/vizhome/tfresults01/FifteenYearHistory",
@@ -155,7 +156,15 @@ export const state = () => ({
             link: "https://hdb-resale-prices.sg/",
             lastupdate: "03/11/2021",
             live: true
-        }    
+        },
+        {
+            name: "Olympics and SG sports",
+            category: "sports",
+            image: "/vizimg/sports_hejun.jpg",
+            description: "Tableau compilation on SG sports related datasets.",
+            link: "https://public.tableau.com/app/profile/hejun.l",
+            lastupdate: "02/09/2021"
+        },
     ]
 })
 

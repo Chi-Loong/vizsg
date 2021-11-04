@@ -30,7 +30,7 @@ export default {
           },
           {
               question: "What is the history of this site?",
-              answer: "<p>Viz.sg started in 2015 as a small showcase of personal visualizations.</p><p>Then it grew into a listing of visualizations by the community.</p><p>This is the 3rd version of the site, and it is open sourced and community moderated at a public <a href='https://github.com/Chi-Loong/vizsg'>GitHub</a> repository.</p>"
+              answer: "<p>Viz.sg started in 2015 as a small showcase of personal visualizations.</p><p>Then it grew into a listing of visualizations by amazing folks in the community.</p><p>This is the 3rd version of the site, and it is open sourced and community moderated at a public <a href='https://github.com/Chi-Loong/vizsg'>GitHub</a> repository.</p>"
           },
           {
               question: "Are you related to data.gov.sg?",
