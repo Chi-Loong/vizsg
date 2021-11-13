@@ -36,32 +36,21 @@ export const state = () => ({
             lastupdate: "17/05/2020"
         },
         {
-            name: "Subzones: Age + Gender",
-            category: "housing and infrastructure",
-            image: "/vizimg/age_gender_subdistrict.jpg",
-            description: "Detailed subzone view of population by age and gender 2011 to 2017.",
-            link: "https://pop.viz.sg/app/map_age_gender/",
-            blog: "http://www.vslashr.com/2016/05/population-by-age-and-gender/",
-            lastupdate: "01/01/2017"
-        },
-        {
             name: "Dengue Heatmap",
             category: "health and environment",
             image: "/vizimg/dengue.jpg",
             description: "Live visualization on dengue and zika cases around the island.",
             link: "https://dengue.viz.sg/",
-            blog: "http://www.vslashr.com/2013/06/singapore-dengue-clustering-heatmap/",
             lastupdate: "28/10/2021",
             live: true
         },
         {
-            name: "Subzones: Housing",
+            name: "Subzones: Age + Gender",
             category: "housing and infrastructure",
-            image: "/vizimg/housing_subdistrict.jpg",
-            description: "Detailed sub-district view of population by housing types in 2016.",
-            link: "https://pop.viz.sg/app/map_housing/",
-            blog: "http://www.vslashr.com/2016/11/population-by-housing/",
-            lastupdate: "01/01/2017"
+            image: "/vizimg/age_gender_subdistrict.jpg",
+            description: "Detailed sub-district view of population by age and gender, June 2021",
+            link: "https://pop.viz.sg/",
+            lastupdate: "13/11/2021"
         },
         {
             name: "School Picker",
@@ -173,7 +162,7 @@ export const state = () => ({
             link: "https://railrouter.sg/",
             lastupdate: "09/11/2021",
             live: true
-        },
+        }
     ]
 })
 
