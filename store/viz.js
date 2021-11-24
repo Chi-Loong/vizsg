@@ -143,8 +143,7 @@ export const state = () => ({
             image: "/vizimg/hdb-resale-prices.jpg",
             description: "HDB resale prices by year, town and type.",
             link: "https://hdb-resale-prices.sg/",
-            lastupdate: "03/11/2021",
-            live: true
+            lastupdate: "03/11/2021"
         },
         {
             name: "Olympics and SG sports",
