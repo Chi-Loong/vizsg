@@ -25,8 +25,8 @@ export default {
       { hid: 'og:url', property: 'og:url', content: 'https://viz.sg'},
       { hid: 'og:title', property: 'og:title', content: 'Visualizing Singapore'},
       { hid: 'og:description', property: 'og:description', content: 'Visualizing Singapore, one dataset at a time. A resource on all things visualization in Singapore.'},
-      { hid: 'og:image', property: 'og:image', content: 'vizsg.jpg'},
-      { hid: 'og:image:secure_url', property: 'og:image:secure_url', content: 'vizsg.jpg'},
+      { hid: 'og:image', property: 'og:image', content: 'https://viz.sg/vizsg.jpg'},
+      { hid: 'og:image:secure_url', property: 'og:image:secure_url', content: 'https://viz.sg/vizsg.jpg'},
       { hid: 'og:image:alt', property: 'og:image:alt', content: 'Viz.SG'}
     ],
     link: [
