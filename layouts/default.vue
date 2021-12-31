@@ -42,7 +42,7 @@ export default {
         },
         {
           icon: 'mdi-lead-pencil',
-          title: 'Visualized Stories',
+          title: 'Data Stories',
           to: '/stories'
         },
         {
