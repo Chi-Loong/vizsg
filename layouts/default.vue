@@ -37,8 +37,13 @@ export default {
       items: [
         {
           icon: 'mdi-chart-pie',
-          title: 'Visualizations',
+          title: 'Analytic Tools',
           to: '/'
+        },
+        {
+          icon: 'mdi-lead-pencil',
+          title: 'Visualized Stories',
+          to: '/stories'
         },
         {
           icon: 'mdi-domain',

@@ -54,7 +54,6 @@
                 </v-btn>
               </v-card-title>
               <v-card-subtitle>Last update: {{ ele.lastupdate }} 
-                <span v-if="ele.live" class="yellow--text">(Live!)</span>
               </v-card-subtitle>
           </v-card>
           </v-hover>
@@ -84,12 +83,12 @@ export default {
     projectPickerWidth: 0,
     projectPickerHeight: 0,
     prevIndex: 0,
-    title: "All analytic tools"
+    title: "All data stories"
   }),
   computed: {
     ...mapState({
-        categories: state => state.viz.categories,
-        visualizations: state => state.viz.analytictools
+        categories: state => state.stories.categories,
+        visualizations: state => state.stories.stories
     }),
     getVizTitles: function() {
       this.searchList = this.visualizations.map(ele => ele.name);
@@ -161,7 +160,7 @@ export default {
 
       this.searchedViz = [];
 
-      if (ele.name != "All analytic tools") {
+      if (ele.name != "All data stories") {
         let filtered = this.viz.filter(element => element.category == ele.name);
         this.viz = filtered;
       }
@@ -233,7 +232,7 @@ export default {
       this.viz.sort(this.sortCardsByTime);
 
       this.picker = this.categories.map(all => all);
-      this.picker.splice(0, 0, { name: "All analytic tools", icon: "mdi-chart-pie" });
+      this.picker.splice(0, 0, { name: "All data stories", icon: "mdi-lead-pencil" });
 
       window.addEventListener("resize", this.getProjectPickerSize);
       this.getProjectPickerSize();
@@ -298,4 +297,9 @@ h1, h2 {
 .vizlist-move {
   transition: transform 2s;
 }
+
+.v-card__text, .v-card__title {
+  word-break: normal; /* maybe !important  */
+}
+
 </style>
