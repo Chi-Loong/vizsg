@@ -65,7 +65,7 @@ export default {
           title: 'About',
           to: '/about'
         }
-      ],
+      ]
   }),
   beforeCreate() {
     this.showSpinner = true;

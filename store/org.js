@@ -19,6 +19,16 @@ export const state = () => ({
             name: "Synthesis",
             description: "Human centered data science",
             link: "https://synthesis.partners/"
+        },
+        {
+            name: "Gramener",
+            description: "Insights as data stories",
+            link: "https://gramener.com/"
+        },
+        {
+            name: "MuddLab",
+            description: "Combining technology, social change and the human experience",
+            link: "https://muddlab.com/"
         }
     ],
     newsrooms: [
