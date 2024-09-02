@@ -29,7 +29,7 @@ export const state = () => ({
             school: "Singapore University of Technology and Design",
             instructor: "Chan Chi-Loong",
             year: 2021,
-            link: "https://chi-loong.github.io/HASS02.526/"
+            link: "https://chi-loong.github.io/IDV/"
         }
     ],
     newsletters: [
