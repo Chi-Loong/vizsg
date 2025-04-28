@@ -9,6 +9,14 @@ export const state = () => ({
     ],
     analytictools: [
         {
+            name: "SG Election Viz",
+            category: "politics, social and culture",
+            image: "/vizimg/tools/elections_viz.jpg",
+            description: "Elections throughout all the years",
+            link: "https://elections-sg.schoolex.me/",
+            lastupdate: "28/04/2025"
+        },
+        {
             name: "Covid Case Clusters",
             category: "health and environment",
             image: "/vizimg/tools/covidsg.jpg",
@@ -17,13 +25,13 @@ export const state = () => ({
             lastupdate: "27/06/2021"
         },
         {
-            name: "Elections 2020",
+            name: "Elections 2025",
             category: "politics, social and culture",
             image: "/vizimg/tools/ge2020.jpg",
-            description: "Interactive viz on Singapore's GE2020, compared to GE2015 and GE2011",
+            description: "Interactive viz on Singapore's GE2025, compared to GE2020, GE2015 and GE2011",
             link: "http://elections.viz.sg/",
             blog: "https://www.linkedin.com/pulse/ge2020-live-visualization-aftermath-chi-loong-chan/",
-            lastupdate: "10/07/2020"
+            lastupdate: "24/04/2025"
         },
         {
             name: "Dengue Heatmap",
@@ -31,8 +39,7 @@ export const state = () => ({
             image: "/vizimg/tools/dengue.jpg",
             description: "Live visualization on dengue and zika cases around the island.",
             link: "https://dengue.viz.sg/",
-            lastupdate: "28/10/2021",
-            live: true
+            lastupdate: "28/10/2021"
         },
         {
             name: "Subzones: Age + Gender",
@@ -82,8 +89,7 @@ export const state = () => ({
             image: "/vizimg/tools/taxirouter.jpg",
             description: "Observe live available taxi locations.",
             link: "https://taxirouter.sg/",
-            lastupdate: "01/01/2021",
-            live: true
+            lastupdate: "01/01/2021"
         },
         {
             name: "Busrouter.sg",
@@ -91,8 +97,7 @@ export const state = () => ({
             image: "/vizimg/tools/busrouter.jpg",
             description: "Explore real-time bus route data and arrival times.",
             link: "https://busrouter.sg/",
-            lastupdate: "01/01/2021",
-            live: true
+            lastupdate: "01/01/2021"
         },
         {
             name: "SG Property Prices",
@@ -149,8 +154,7 @@ export const state = () => ({
             image: "/vizimg/tools/railrouter.jpg",
             description: "Real-time crowdedness level indicators on MRT/LRT stations.",
             link: "https://railrouter.sg/",
-            lastupdate: "09/11/2021",
-            live: true
+            lastupdate: "09/11/2021"
         },
         {
             name: "Check Weather SG",
@@ -158,8 +162,7 @@ export const state = () => ({
             image: "/vizimg/tools/weather.jpg",
             description: "Real-time weather visualization in SG.",
             link: "https://checkweather.sg/",
-            lastupdate: "01/01/2021",
-            live: true
+            lastupdate: "01/01/2021"
         },
         {
             name: "Explore Trees SG",
@@ -167,8 +170,7 @@ export const state = () => ({
             image: "/vizimg/tools/trees.jpg",
             description: "Explore heritage and non-heritage trees in SG.",
             link: "https://exploretrees.sg/",
-            lastupdate: "01/01/2021",
-            live: true
+            lastupdate: "01/01/2021"
         }
     ]
 })
